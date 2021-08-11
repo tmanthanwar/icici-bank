@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>first Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <i onclick="hitALikes()" class="fa fa-thumbs-up" style="font-size:48px;color:grey"></i><span id="likes_id">0</span>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <i onclick="hitADislikes()"  class="fa fa-thumbs-down" style="font-size:48px;color:grey"></i><span id="dislikes_id">0</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    
+                  
+        <script>
+
+            //code to increse likes and dislikes
+
+            var likes= 0;
+            var dislikes= 0;
+
+            function hitALikes() {
+                likes++;
+                document.getElementById("likes_id").innerHTML = likes;
+
+            }
+            function hitADislikes() {
+                dislikes++;
+                document.getElementById("dislikes_id").innerHTML = dislikes;
+            }
+            
+            // CODE to change color on click
+
+            // function changeALikes() {
+            //     if (document.getElementById("fb").style.color== "grey") 
+            //     {
+            //     document.getElementById("fb").style.color = "blue";
+            //     }
+            //     else {
+            //     document.getElementById("fb").style.color= "grey";
+            //     }
+            // }
+
+            // code to change like into dislike    
+            //    function hitALikes() {
+            //        document.getElementById("likes").classList.toggle("fa-thumbs-down");
+            //    }
+        </script>
+
+    </body>
+</html>
