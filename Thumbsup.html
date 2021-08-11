@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Thumb change</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <i onclick="thumbLikes()" class="fa fa-thumbs-up" id="fb" style="font-size:48px;color:darkblue"></i>
+    
+    
+        <script>
+            var currenThumb = document.getElementById("fb");
+           
+
+            function thumbLikes() {
+                if  (document.getElementById("fb")== currenThumb)
+                {
+                    document.getElementById("fb").classList.toggle("fa-thumbs-down");
+                }
+                else {
+                    document.getElementById("fb")== currenThumb
+                }
+            }
+        </script>
+   
+    
+    </body>
+
+    
+</html>
